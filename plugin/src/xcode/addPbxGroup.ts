@@ -39,14 +39,14 @@ export function addPbxGroup(
   // Add PBX group
   const { uuid: pbxGroupUuid } = xcodeProject.addPbxGroup(
     [
-      "AppDelegate.h",
-      "AppDelegate.mm",
-      "main.m",
-      "Info.plist",
-      "Images.xcassets",
-      "SplashScreen.storyboard",
-      `${targetName}.entitlements`,
-      "Supporting/Expo.plist",
+      `${targetName}/AppDelegate.h`,
+      `${targetName}/AppDelegate.mm`,
+      `${targetName}/main.m`,
+      `${targetName}/Info.plist`,
+      `${targetName}/Images.xcassets`,
+      `${targetName}/SplashScreen.storyboard`,
+      `${targetName}/${targetName}.entitlements`,
+      `${targetName}/Supporting/Expo.plist`,
       /* "main.jsbundle", */
     ],
     targetName,
