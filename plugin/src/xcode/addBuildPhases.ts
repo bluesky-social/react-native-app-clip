@@ -4,10 +4,12 @@ import util from "util";
 export function addBuildPhases(
   xcodeProject: XcodeProject,
   {
+    targetName,
     targetUuid,
     groupName,
     productFile,
   }: {
+    targetName: string;
     targetUuid: string;
     groupName: string;
     productFile: {
@@ -77,7 +79,11 @@ export function addBuildPhases(
 
   // Resources build phase
   xcodeProject.addBuildPhase(
-    ["Images.xcassets", "SplashScreen.storyboard", "Supporting/Expo.plist"],
+    [
+      `${targetName}/Images.xcassets`,
+      `${targetName}/SplashScreen.storyboard`,
+      `${targetName}/Supporting/Expo.plist`
+    ],
     "PBXResourcesBuildPhase",
     groupName,
     targetUuid,
