@@ -26,7 +26,7 @@ const withAppClip: ConfigPlugin<{
     excludedPackages,
   }
 ) => {
-  const bundleIdentifier = `${config.ios?.bundleIdentifier}.clip`;
+  const bundleIdentifier = `${config.ios?.bundleIdentifier}.Clip`;
   const targetName = `${IOSConfig.XcodeUtils.sanitizedName(config.name)}AppClip`;
 
   config = withPlugins(config, [
