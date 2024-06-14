@@ -36,7 +36,7 @@ const withAppClip: ConfigPlugin<{
     throw new Error("No bundle identifier specified in app config");
   }
 
-  const bundleIdentifier = `${config.ios.bundleIdentifier}.Clip`;
+  const bundleIdentifier = `${config.ios.bundleIdentifier}.AppClip`;
   const targetName = `${IOSConfig.XcodeUtils.sanitizedName(config.name)}Clip`;
 
   const modifiedConfig = withPlugins(config, [

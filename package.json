@@ -28,7 +28,7 @@
     "react-native",
     "expo",
     "react-native-app-clip",
-    "ReactNativeAppClip"
+    "ReactNative"
   ],
   "repository": "https://github.com/bndkt/react-native-app-clip",
   "bugs": {
